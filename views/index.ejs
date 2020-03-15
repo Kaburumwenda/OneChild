@@ -1,0 +1,74 @@
+<%- include('_layouts/header') -%>
+
+
+<div id="index">
+    <div class="container">
+        <!--START OF INDEX-->
+          <div>
+              <!--Slider ADVERTS-->
+    <div id="show-case" class="index-slider">
+        <div class="imgslider1"><a href="#"><img class="img-responsive" src="/assests/on1.jpg"/></a></div>
+        
+        <div class="imgslider1"><a href="#"><img class="img-responsive" src="/assests/on2.jpg"/></a></div>
+  
+        <div class="imgslider1"><a href="#"><img class="img-responsive" src="/assests/on3.jpg"/></a></div>
+  
+        <div class="imgslider1"><a href="#"><img class="img-responsive" src="/assests/on4.jpg"/></a></div>
+  
+        <div class="imgslider1"><a href="#"><img class="img-responsive" src="/assests/on5.jpg"/></a></div>
+  
+        
+    </div>
+          </div>
+
+          <!--SECTION TWO
+            //
+            //
+        -->
+        <div id="index-button">
+            <div class="index-button-two">
+                <p><a href="/"><i class="fa fa-tree" aria-hidden="true"></i></a></p>
+                
+                <p><a href="/">Gift a Tree</a></p>
+            </div>
+
+            <div class="index-button-two">
+                <p><a href="/"><i class="fa fa-calendar" aria-hidden="true"></i> </a></p>
+                <p><a href="/">Events</a></p>
+            </div>
+
+            <div class="index-button-two">
+                <p><a href="/"><i class="fa fa-envelope-open" aria-hidden="true"></i>        </a></p>
+                <p><a href="/">News</a></p>
+            </div>
+
+            <div class="index-button-two">
+                <p><a href="/"><i class="fa fa-gift" aria-hidden="true"></i></a></p>
+                <p><a href="/">Support Us</a></p>
+            </div>
+
+        </div>
+        <!--END OF INDEX-->
+    </div>
+</div>
+
+<script>
+    $(document).ready(function()
+   {
+       $('.imgslider1:gt(0)').hide();
+       setInterval(function() {
+           $(".imgslider1:first-child").slideUp(3000).next(".imgslider1").slideDown(3000).end().appendTo("#show-case")
+   }, 3000);
+   
+
+   $('.welcome-text:gt(0)').hide();
+       setInterval(function() {
+           $(".welcome-text:first-child").fadeOut(100).next(".welcome-text").fadeIn(3000).end().appendTo("#welcome")
+   }, 3000);
+   
+   });
+</script>
+
+<%- include('_layouts/footer') -%>
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> <%= title %></title>
+        <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/user.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+       
+        <link rel="stylesheet" href="/css/index.css" />
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+
+            <div class="nav-top">
+                <div class="brand"><a href="/">OneChildOneTreeInitiative</a></div>
+                
+                <div class="spacer"></div>
+                <div class="nav-2">
+                    <p>
+                        <a href="/"><i class="fa fa-user" aria-hidden="true"></i></a>
+                        <a href="#">About Us</a>
+                    </p>
+                    <p>
+                        <a href="/"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+                        <a href="#">Contact Us</a>
+                    </p>
+                    
+                </div>
+                <div>
+                    <ul class="credit">
+                    
+                        <% if (user) { %>
+                        <li><a href="/users/logout">Hi, <%= user.username %> ( logout )</a></li>
+                        <% } else {%>
+                        <li><a href="/users/register">Register</a></li>
+                        <li><a href="/users/login">Log in</a></li>
+                        <% } %>
+                        <% if (user && user.admin == 1) { %>
+                        <li><a href="/admin/products">Administrator</a></li>
+                        <% }%>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!--SECTION TWO FOR MOBILE
+                //MOBILE
+
+                //MOBILE
+            -->
+
+            <div class="header-two">
+               
+                <div>
+                   <!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="/" class="active logo_brand"> <img src="/assests/logo.jpg"/></a>
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#about">About Us</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <div>
+      <ul class="mobile-credit">
+                    
+        <% if (user) { %>
+        <li><a href="/users/logout">Hi, <%= user.username %> ( logout )</a></li>
+        <% } else {%>
+        <li><a href="/users/register">Register</a></li>
+        <li><a href="/users/login">Log in</a></li>
+        <% } %>
+        <% if (user && user.admin == 1) { %>
+        <li><a href="/admin/products">Administrator</a></li>
+        <% }%>
+        
+    </ul>
+    </div>
+    <!-- End smartphone / tablet look -->
+    </div>
+     
+                </div>
+            </div>
+
+            <!--END OF HEADER-->
+        </div>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+    </body>
+
+
+
+
+

@@ -1,0 +1,137 @@
+body{
+    background-color: #c8ead6;
+}
+.logo_brand img{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+}
+.nav-top{
+    
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    background-color: #4d4d4d;
+    margin-top: 0px;
+    
+    
+}
+.nav-top a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.spacer{
+    flex: 1;
+}
+.nav-2{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+.nav-2 p:hover{
+    color: orange;
+    background-color: black;
+}
+.nav-2 p{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+}
+.brand{
+    color: black;
+    font-weight: bold;
+    font-family: 'Oswald';
+
+}
+.brand a:hover{
+    color: orange !important;
+}
+
+
+/* two 
+
+*/
+
+
+.mobile-container {
+    
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    margin-left: 0px !important;
+    background-color: whitesmoke !important;
+    z-index: 1;
+    border-radius: 10px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color:#339966;
+    position: relative;
+  }
+
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+   
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color:#b3ffb3;
+    color: black;
+  }
+  
+  .active {
+    
+    color: white;
+  }
+  .mobile-credit{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 20px;
+  }
+  .mobile-credit li{
+      list-style: none;
+  }
+  .mobile-credit a{
+      text-decoration: none;
+      margin-right: 10px;
+      font-weight: bold;
+      margin-top: 10px;
+  }
+  .mobile-credit a:hover{
+      color: orange;
+  }
+
+  @media(max-width:700px){
+      .nav-top{
+          display: none;
+      }
+  }
+
+ @media(min-width:700px){
+     .header-two{
+         display: none;
+     }
+ }

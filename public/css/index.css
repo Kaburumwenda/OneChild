@@ -1,0 +1,50 @@
+#index{
+    margin-top: 10px;
+}
+
+.index-slider{
+    border: 2px solid black;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.imgslider1 img{
+    width: 100%;
+    height: 400px;
+}
+
+/*SECTION TWO
+//
+///
+*/
+
+#index-button{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.index-button-two{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.index-button-two a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.index-button-two a:hover{
+    color: orange;
+}
+
+@media(max-width:700px){
+    #index{
+        margin-top: 100px;
+    }
+    .imgslider1 img{
+        height: 200px;
+    }
+    .index-slider{
+        height: 200px;
+    }
+}
